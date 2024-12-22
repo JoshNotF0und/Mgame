@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rps.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <audio id="cd" src="tap.mp3"></audio>
+        <audio id="cc" src="pper.mp3.mp3"></audio>
+        <audio id="c" src="rk.mp3.mp3"></audio>
+        <audio id="ct" src="ss.mp3.mp3"></audio>
+        <audio id ="ls" src="lose.mp3.mp3"></audio>
+        <audio id="wn" src="win.mp3.mp3"></audio>
+        <title>Rock Paper Scissor Game</title>
+    </head>
+    <body>
+        <div class="intro-modal" id="intro-modal">
+            <div class="intro-content">
+                <h2>ROCK PAPER SCISSOR</h2>
+                
+                <div class="intro-buttons">
+                    <button id="btn-play" onclick=" startNewGame(); audio.play();">PLAY</button> 
+                    </div>
+                    </div>
+                </div>
+        <div class="bor"> 
+        <button onclick="pauseGame();" id="pause-button"><span class="material-symbols-outlined">pause</span></button>
+        <p class="resulT"></p>
+        <div class="sco">
+        <p class="score"></p>
+        </div>
+        <p class="movE"></p>
+        <div class="all">
+          <span class="i"> <img src="scissor.png" alt="R" id="Scissor" onclick="playGame('scissor'); audio.play();"></span>
+          <div class="o"><img src="pAper.png" alt="P" id="Paper" onclick="playGame('paper'); audio.play();"></div>
+          <span class="p"> <img src="rOck.png" alt="S" id="Rock" onclick="playGame('rock'); audio.play();"></span>
+        </div>
+    
+
+    
+        <script src="rps.js"></script>
+        </div>
+    </body>
+</html>
